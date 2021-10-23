@@ -15,6 +15,8 @@
 Numbers:
 * Blue number: Is visible on other monitor
 * Orange number: Is visible on this monitor
+* White number: Tag is not empty.
+* Gray number: Tag is empty.
 
 Underlines:
 * Blue underline: Is visible & focused on other monitor
