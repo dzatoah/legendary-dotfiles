@@ -40,16 +40,19 @@ herbstclient --idle "tag_*" 2>/dev/null | {
                         ;;
                     '+')
                         # the tag is viewed on the specified MONITOR, but this monitor is not focused.
+			echo "%{F#FF9900}"
                         ;;
                     '#')
                         # the tag is viewed on the specified MONITOR and it is focused.
-                        echo "%{u#ff9900}%{+u}%{F#fff}"
+                        echo "%{u#FF9900}%{+u}%{F#FF9900}"
                         ;;
                     '-')
                         # the tag is viewed on a different MONITOR, but this monitor is not focused.
+			echo "%{F#0011FF}"
                         ;;
                     '%')
                         # the tag is viewed on a different MONITOR and it is focused.
+			echo "%{u#0011ff}%{+u}%{F#0011FF}"
                         ;;
                     '!')
                         # the tag contains an urgent window.
