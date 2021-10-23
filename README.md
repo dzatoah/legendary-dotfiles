@@ -18,3 +18,11 @@ The following list has no order.
 * https://github.com/polybar/polybar
 * https://github.com/varietywalls/variety/
 * https://github.com/adi1090x/rofi
+
+### Rofi herbsluftwm-tag colors
+
+Blue number: Is visible on other monitor
+Orange number: Is visible on this monitor
+
+Blue underline: Is visible & focused on other monitor
+Orange underline: Is visible & focused on this monitor
