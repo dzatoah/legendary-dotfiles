@@ -3,7 +3,9 @@
 # Multi monitor support. Needs MONITOR environment variable to be set for each instance of polybar
 # If MONITOR environment variable is not set this will default to monitor 0
 # Check https://github.com/polybar/polybar/issues/763
-set -x
+
+#set -x
+
 echo "" > ~/.config/polybar/log.txt
 
 MON_IDX="0"
@@ -11,12 +13,12 @@ mapfile -t MONITOR_LIST < <(polybar --list-monitors | cut -d":" -f1 | tac)
 for (( i=0; i<$((${#MONITOR_LIST[@]})); i++ )); do
   [[ ${MONITOR_LIST[${i}]} == "$MONITOR" ]] && MON_IDX="$i"
   echo "MONITOR_LIST[$i] = ${MONITOR_LIST[${i}]}" >> ~/.config/polybar/log.txt
-  echo "MONITOR=$MONITOR" >> ~/.config/polybar/log.txt
-  echo "MON_IDX=$MON_IDX" >> ~/.config/polybar/log.txt
+  #echo "MONITOR=$MONITOR" >> ~/.config/polybar/log.txt
+  #echo "MON_IDX=$MON_IDX" >> ~/.config/polybar/log.txt
 done;
 
-echo "" >> ~/.config/polybar/log.txt
-echo "$MON_IDX---"
+#echo "" >> ~/.config/polybar/log.txt
+#echo "$MON_IDX---"
 
 herbstclient --idle "tag_*" 2>/dev/null | {
 
@@ -69,4 +71,5 @@ herbstclient --idle "tag_*" 2>/dev/null | {
     read -r || break
 done
 } 2>/dev/null
-set +x
+
+#set +x
