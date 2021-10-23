@@ -33,3 +33,4 @@ The following list has no order.
 * https://github.com/polybar/polybar
 * https://github.com/varietywalls/variety/
 * https://github.com/adi1090x/rofi
+* https://github.com/ohmyzsh/ohmyzsh
