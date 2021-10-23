@@ -33,11 +33,12 @@ font-0 = Iosevka Nerd Font:weight=medium:size=10;2
 inherit = bar/base
 modules-left = info-hlwm-workspaces
 #modules-left = title
-#modules-right = weather
-modules-right = monitor notifications cpu memory pulseaudio battery network-networkmanager date time powermenu
+#modules-right = weather time
+modules-right = monitor notifications cpu memory pulseaudio battery network-networkmanager date powermenu
 #wm-restack = bspwm
 tray-position = right
 monitor = ${env:MONITOR:}
+locale = de_DE.UTF-8
 
 [settings]
 screenchange-reload = true
@@ -60,16 +61,16 @@ format-padding = 0
 click-left = dunstctl set-paused toggle
 exec = ~/.config/polybar/polybar-scripts/alert-icon.sh
 
-[module/time]
-type     = internal/date
-interval = 5
-time  = %H:%M
-label = %time%
+#[module/time]
+#type     = internal/date
+#interval = 5
+#time  = %H:%M
+#label = %time%
 
 [module/date]
 type     = internal/date
 interval = 5
-date  = %A, %b %d
+date  = %A, %b %d %H:%M
 label = %date%
 
 [module/pulseaudio]
@@ -161,6 +162,8 @@ menu-0-1 =
 menu-0-1-exec = menu-open-2
 menu-0-2 =
 menu-0-2-exec = menu-open-3
+menu-0-3 =⏾
+menu-0-3-exec = menu-open-4
 
 menu-1-0 =ﰇ
 menu-1-0-exec = systemctl reboot
@@ -176,3 +179,8 @@ menu-3-0 =
 menu-3-0-exec = herbstclient quit
 menu-3-1 =
 menu-3-1-exec = menu-open-0
+
+menu-4-0 =⏾
+menu-4-0-exec = systemctl hybrid-sleep
+menu-4-1 =
+menu-4-1-exec = menu-open-0
