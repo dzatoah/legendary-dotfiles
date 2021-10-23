@@ -1,13 +1,26 @@
 # Dotfiles.
 
-### This repo includes:
+## This repo includes:
 
 * Variety
 * herbstluftwm
 * polybar
 * Rofi
+* Oh-My-ZSH
 
-### Resources and inspiration (Thank you all!)
+## Polybar herbsluftwm-tag colors
+
+![Polybar-HLWM-Tag-Colors](Screenshots/polybar-hlwm-tag-colors.png)
+
+Numbers:
+* Blue number: Is visible on other monitor
+* Orange number: Is visible on this monitor
+
+Underlines:
+* Blue underline: Is visible & focused on other monitor
+* Orange underline: Is visible & focused on this monitor
+
+## Resources and inspiration (Thank you all!)
 
 The following list has no order.
 
@@ -18,11 +31,3 @@ The following list has no order.
 * https://github.com/polybar/polybar
 * https://github.com/varietywalls/variety/
 * https://github.com/adi1090x/rofi
-
-### Rofi herbsluftwm-tag colors
-
-Blue number: Is visible on other monitor
-Orange number: Is visible on this monitor
-
-Blue underline: Is visible & focused on other monitor
-Orange underline: Is visible & focused on this monitor
