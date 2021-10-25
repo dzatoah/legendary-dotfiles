@@ -107,3 +107,4 @@ export PYTHONPATH="/usr/lib/python3/dist-packages"
 WINDOW_MANAGER="herbstluftwm"
 
 export PATH=$HOME/.config/rofi/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH

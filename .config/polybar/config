@@ -144,43 +144,6 @@ tail = true
 interval = 5s
 
 [module/powermenu]
-type = custom/menu
-
-label-open =
-label-open-foreground = ${colors.foreground}
-label-open-background = ${colors.background}
-label-open-padding = 1
-label-close =
-label-close-padding = 1
-label-close-foreground = $[colors.foreground]
-label-separator = " | "
-label-separator-foreground = #666666
-
-menu-0-0 =ﰇ
-menu-0-0-exec = menu-open-1
-menu-0-1 =
-menu-0-1-exec = menu-open-2
-menu-0-2 =
-menu-0-2-exec = menu-open-3
-menu-0-3 =⏾
-menu-0-3-exec = menu-open-4
-
-menu-1-0 =ﰇ
-menu-1-0-exec = systemctl reboot
-menu-1-1 =
-menu-1-1-exec = menu-open-0
-
-menu-2-0 =
-menu-2-0-exec = systemctl poweroff
-menu-2-1 =
-menu-2-1-exec = menu-open-0
-
-menu-3-0 =
-menu-3-0-exec = herbstclient quit
-menu-3-1 =
-menu-3-1-exec = menu-open-0
-
-menu-4-0 =⏾
-menu-4-0-exec = systemctl hybrid-sleep
-menu-4-1 =
-menu-4-1-exec = menu-open-0
+type = custom/script
+exec = "echo '襤 '"
+click-left = "$HOME/.config/rofi/bin/powermenu"
