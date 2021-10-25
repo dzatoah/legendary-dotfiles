@@ -27,17 +27,18 @@ init_config () {
     fi
 
     # default theme
-    loginbox=00000066
-    loginshadow=00000000
-    locktext="Type password to unlock..."
+    loginbox=00000080
+    loginshadow=000000
+    locktext="Gib das Passwort ein…"
     font="sans-serif"
-    ringcolor=ffffffff
+    ringcolor=FFFFFFFF
     insidecolor=00000000
     separatorcolor=00000000
     ringvercolor=ffffffff
     insidevercolor=00000000
     ringwrongcolor=ffffffff
-    insidewrongcolor=d23c3dff
+    #insidewrongcolor=d23c3dff
+    insidewrongcolor=FF000055
     timecolor=ffffffff
     time_format="%H:%M:%S"
     greetercolor=ffffffff
@@ -168,13 +169,13 @@ lock() {
         --keylayout "${keylayout:-0}" \
         --verif-pos="ix+35:iy-34" \
         --verif-align 2 \
-        --verif-text="Verifying..." \
+        --verif-text="Prüfe…" \
         --verif-color="$verifcolor" \
         --verif-font="$font" \
         --verif-size="$fontsm" \
         --wrong-pos="ix+24:iy-34" \
         --wrong-align 2 \
-        --wrong-text="Failure!" \
+        --wrong-text="Falsch!" \
         --wrong-color="$wrongcolor" \
         --wrong-font="$font" \
         --wrong-size="$fontsm" \

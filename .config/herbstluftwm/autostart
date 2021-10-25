@@ -21,8 +21,10 @@ Mod=Mod1    # Use alt as the main modifier
 # Alt+F2
 hc keybind Mod1-0xffbf spawn "$HOME/.config/rofi/bin/launcher_misc"
 
-betterlockscreen -l -u $HOME/Screenshots/lockscreens --display 2 &
+notify-send "Herbstluftwm" "Reloading config…"
+$HOME/.local/bin/betterlockscreen -u ~/Screenshots/lockscreens/lockscreen.jpg --fx
 hc keybind Mod4-l spawn $HOME/.local/bin/betterlockscreen -l $HOME/Screenshots/lockscreen.jpg
+
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
