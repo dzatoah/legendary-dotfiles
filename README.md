@@ -7,6 +7,7 @@
 * polybar
 * Rofi
 * Oh-My-ZSH
+* Betterlockscreen
 
 ## Polybar herbsluftwm-tag colors
 
@@ -34,3 +35,4 @@ The following list has no order.
 * https://github.com/varietywalls/variety/
 * https://github.com/adi1090x/rofi
 * https://github.com/ohmyzsh/ohmyzsh
+* https://github.com/betterlockscreen
