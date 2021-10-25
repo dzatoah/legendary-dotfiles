@@ -1,0 +1,11 @@
+# Das ist Git's benutzerspezifische Konfiguraionsdatei.
+[user]
+# Bitte passen Sie die folgenden Zeilen an und kommentieren Sie diese aus:
+	name = Daniel Teichmann
+	email = daniel.teichmann@das-netzwerkteam.de
+[pull]
+	rebase = true
+[push]
+	default = matching
+[color]
+	ui = auto
