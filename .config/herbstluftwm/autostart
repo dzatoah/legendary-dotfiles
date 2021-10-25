@@ -29,7 +29,7 @@ hc keybind $Mod-Shift-c close
 #hc keybind $Mod-e spawn "${EXPLORER:-dolphin}" # use your $EXPLORER with dolphin as fallback
 hc keybind $Mod-Return spawn "${TERMINAL:-mate-terminal}" # use your $TERMINAL with xterm as fallback
 hc keybind $Mod-w spawn "${WEBBROWSER:-firefox}" # use your $WEBBROWSER with firefox as fallback
-hc keybind Print spawn "mate-screenshot -i"
+#hc keybind Print spawn "mate-screenshot -i"
 
 # basic movement in tiling and floating mode
 # focusing clients
