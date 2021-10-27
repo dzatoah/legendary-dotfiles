@@ -33,10 +33,10 @@ font-0 = Iosevka Nerd Font:weight=medium:size=10;2
 inherit = bar/base
 modules-left = info-hlwm-workspaces
 #modules-left = title
-#modules-right = weather time
-modules-right = monitor notifications cpu memory pulseaudio battery network-networkmanager date powermenu
+#modules-right = weather time monitor
+modules-right = spotify notifications cpu memory pulseaudio battery network-networkmanager date powermenu
 #wm-restack = bspwm
-tray-position = right
+tray-position = left
 monitor = ${env:MONITOR:}
 locale = de_DE.UTF-8
 
@@ -147,3 +147,16 @@ interval = 5s
 type = custom/script
 exec = "echo '襤 '"
 click-left = "$HOME/.config/rofi/bin/powermenu"
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-suffix = "  "
+format = <label>
+exec = PYTHONPATH="/usr/lib/python3/dist-packages" /usr/bin/env python3 $HOME/.config/polybar/polybar-scripts/spotify_status.py -f '{play_pause} {song} - {artist}' -p ' , '
+#exec = PYTHONPATH="/usr/lib/python3/dist-packages" bash -c "python3.9 $HOME/.config/polybar/polybar-scripts/test.py &> $HOME/.config/polybar/logs/test.log"
+#format-underline = #1db954
+#;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous
