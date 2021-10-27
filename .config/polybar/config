@@ -153,6 +153,7 @@ type = custom/script
 interval = 1
 format-suffix = "  "
 format = <label>
+# PYTHONPATH is set here because otherwise debian-managed packages would NOT be loaded!
 exec = PYTHONPATH="/usr/lib/python3/dist-packages" /usr/bin/env python3 $HOME/.config/polybar/polybar-scripts/spotify_status.py -f '{play_pause} {song} - {artist}' -p ' , '
 #exec = PYTHONPATH="/usr/lib/python3/dist-packages" bash -c "python3.9 $HOME/.config/polybar/polybar-scripts/test.py &> $HOME/.config/polybar/logs/test.log"
 #format-underline = #1db954
