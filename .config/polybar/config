@@ -34,7 +34,7 @@ inherit = bar/base
 modules-left = info-hlwm-workspaces
 #modules-left = title
 #modules-right = weather time monitor
-modules-right = spotify notifications cpu memory pulseaudio battery network-networkmanager date powermenu
+modules-right = spotify notifications cpu memory pulseaudio battery network-networkmanager system-usb-udev date powermenu
 #wm-restack = bspwm
 tray-position = left
 monitor = ${env:MONITOR:}
@@ -161,3 +161,10 @@ exec = PYTHONPATH="/usr/lib/python3/dist-packages" /usr/bin/env python3 $HOME/.c
 click-left = playerctl --player=spotify play-pause 
 click-right = playerctl --player=spotify next 
 click-middle = playerctl --player=spotify previous
+
+[module/system-usb-udev]
+type = custom/script
+exec = bash -c "$HOME/.config/polybar/polybar-scripts/system-usb-udev.sh"
+tail = true
+click-left = $HOME/.config/polybar/polybar-scripts/system-usb-udev.sh --mount &
+click-right = $HOME/.config/polybar/polybar-scripts/system-usb-udev.sh --unmount &
