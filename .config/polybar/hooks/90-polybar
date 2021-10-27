@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# NEEDS TO BE IN /etc/NetworkManager/dispatcher.d/90-polybar
+
+#echo "$2" >> <USER_HOME>/.config/polybar/log.txt
+case "$2" in
+        up)
+            bash <USER_HOME>/.config/polybar/polybar-scripts/network-networkmanager.sh --update
+        ;;
+        down)
+            bash <USER_HOME>/.config/polybar/polybar-scripts/network-networkmanager.sh --update
+        ;;
+esac

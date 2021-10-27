@@ -1,0 +1,5 @@
+# TO BE COPIED INTO /etc/udev/rules.d/95-usb.rules
+KERNEL=="sd*", ACTION=="add", ATTR{removable}=="1", \
+    RUN+="<USER_HOME>/.config/polybar/polybar-scripts/system-usb-udev.sh --update"
+KERNEL=="sd*", ACTION=="remove", \
+    RUN+="<USER_HOME>/.config/polybar/polybar-scripts/system-usb-udev.sh --update"
