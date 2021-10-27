@@ -201,7 +201,7 @@ killall polybar
 rm $HOME/.config/polybar/logs/*.mon.log
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --log=notice --reload main &> $HOME/.config/polybar/logs/$m.mon.log &
+    MONITOR=$m polybar --log=trace --reload main &> $HOME/.config/polybar/logs/$m.mon.log &
   done
 else
   notify-send "Error! - autostart hlwm" "'type xrandr' is null"
