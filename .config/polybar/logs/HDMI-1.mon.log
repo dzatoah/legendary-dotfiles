@@ -1,4 +1,0 @@
-polybar|notice:  Parsing config file: /home/daniel/.config/polybar/config
-polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1b.0.analog-stereo
-polybar|notice:  Loaded font "Iosevka Nerd Font:weight=medium:size=10" (name=Iosevka, offset=2, file=/home/daniel/.fonts/Iosevka Medium Nerd Font Complete.ttf)
-polybar|warn:  Systray selection already managed (window=0x5c00006)
